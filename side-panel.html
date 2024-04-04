@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Add-on Quickstart</title>
+    <script defer src="https://www.gstatic.com/meetjs/addons/0.1.0/meet.addons.js"></script>
+  </head>
+  <body>
+    <div class="header"><img src="/icon.svg"/>Starter add-on</div>
+    <div id="app">
+      <div>
+        This is simple Google Meet Add-on to help you get started with development.
+        It simulates a typical collaboration app where a participant
+        initiates a shared activity by first selecting content.
+      </div>
+      <div>Select an item and start the activity to begin.
+      </div>
+      <div class="content-items">
+        <button data-id="1" data-title="Document 1">Document 1</button>
+        <button data-id="2" data-title="Document 2">Document 2</button>
+        <button data-id="3" data-title="Document 3">Document 3</button>
+      </div>
+    </div>
+    <script type="module" src="/side-panel.js"></script>
+  </body>
+</html>

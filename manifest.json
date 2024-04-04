@@ -1,0 +1,18 @@
+{
+    "addOns": {
+      "common": {
+        "name": "Meet starter add-on",
+        "logoUrl": "http://localhost:5173/logo.png"
+      },
+      "meet": {
+        "web": {
+          "sidePanelUri": "http://localhost:5173/side-panel",
+          "supportsScreenSharing": true,
+          "logoUrl": "http://localhost:5173/logo.png",
+          "addOnOrigins": [
+            "http://localhost:5173"
+          ]
+        }
+      }
+    }
+  }

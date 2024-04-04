@@ -1,0 +1,113 @@
+:root {
+  --gm3-sys-color-background: #fff;
+  --gm3-sys-color-error: #b3261e;
+  --gm3-sys-color-error-container: #f9dedc;
+  --gm3-sys-color-inverse-on-surface: #f2f2f2;
+  --gm3-sys-color-inverse-primary: #a8c7fa;
+  --gm3-sys-color-inverse-surface: #303030;
+  --gm3-sys-color-on-background: #1f1f1f;
+  --gm3-sys-color-on-error: #fff;
+  --gm3-sys-color-on-error-container: #410e0b;
+  --gm3-sys-color-on-primary: #fff;
+  --gm3-sys-color-on-primary-container: #041e49;
+  --gm3-sys-color-on-primary-fixed: #041e49;
+  --gm3-sys-color-on-primary-fixed-variant: #0842a0;
+  --gm3-sys-color-on-secondary: #fff;
+  --gm3-sys-color-on-secondary-container: #001d35;
+  --gm3-sys-color-on-secondary-fixed: #001d35;
+  --gm3-sys-color-on-secondary-fixed-variant: #004a77;
+  --gm3-sys-color-on-surface: #1f1f1f;
+  --gm3-sys-color-on-surface-variant: #444746;
+  --gm3-sys-color-on-tertiary: #fff;
+  --gm3-sys-color-outline: #747775;
+  --gm3-sys-color-outline-variant: #c4c7c5;
+  --gm3-sys-color-primary: #0b57d0;
+  --gm3-sys-color-primary-container: #d3e3fd;
+  --gm3-sys-color-primary-fixed: #d3e3fd;
+  --gm3-sys-color-primary-fixed-dim: #a8c7fa;
+  --gm3-sys-color-scrim: #000;
+  --gm3-sys-color-secondary: #00639b;
+  --gm3-sys-color-secondary-container: #c2e7ff;
+  --gm3-sys-color-secondary-fixed: #c2e7ff;
+  --gm3-sys-color-secondary-fixed-dim: #7fcfff;
+  --gm3-sys-color-shadow: #000;
+  --gm3-sys-color-surface: #fff;
+  --gm3-sys-color-surface-bright: #fff;
+  --gm3-sys-color-surface-container: #f0f4f9;
+  --gm3-sys-color-surface-container-high: #e9eef6;
+  --gm3-sys-color-surface-container-highest: #dde3ea;
+  --gm3-sys-color-surface-container-low: #f8fafd;
+  --gm3-sys-color-surface-container-lowest: #fff;
+  --gm3-sys-color-surface-dim: #d3dbe5;
+  --gm3-sys-color-surface-tint: #6991d6;
+  --gm3-sys-color-surface-variant: #e1e3e1;
+  --gm3-sys-color-tertiary: #146c2e;
+  --gm3-sys-color-tertiary-container: #c4eed0;
+  --gm3-sys-color-tertiary-fixed: #c4eed0;
+  --gm3-sys-color-tertiary-fixed-dim: #6dd58c;
+        
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--gm3-sys-color-on-background);
+  background-color: var(--gm3-sys-color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  font-size: 2em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header > img {
+  height: 1.5em;
+  margin-right: 0.5em;
+}
+
+#app {
+  padding: 0.5em;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: auto;
+}
+
+.content-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.content-items > button {
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: var(--gm3-sys-color-on-primary-container);
+  background-color: var(--gm3-sys-color-primary-container);
+}
+
+.content-items > button:hover {
+  filter: brightness(0.95);
+}
+
+.content-items > button:active {
+  filter: brightness(0.9);
+}
